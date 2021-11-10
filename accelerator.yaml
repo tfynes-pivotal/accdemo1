@@ -4,10 +4,16 @@ accelerator:
   iconUrl: https://raw.githubusercontent.com/sample-accelerators/icons/master/icon-tanzu-light.png
   tags: []
   options:
-  - name: optionName
-    label: Nice Label
+  - name: appName
+    label: Application Name
     display: true
-    defaultValue: ""
+    defaultValue: "accdemo1"
 engine:
   include:
   - '**'
+
+  chain:
+    - type: ReplaceText
+      substitutions:
+      - text: accdemo1
+        with: "#appName"
