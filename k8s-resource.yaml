@@ -1,0 +1,9 @@
+apiVersion: accelerator.apps.tanzu.vmware.com/v1alpha1
+kind: Accelerator
+metadata:
+  name: accdemo1
+spec:
+  git:
+    url: https://github.com/tfynes-pivotal/accdemo1
+    ref:
+      branch: main
